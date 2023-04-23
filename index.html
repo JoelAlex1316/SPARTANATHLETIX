@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Spartan Athletix</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- bootstrap cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <link rel="icon" href="images/logo.png">
+
+   <style>
+      .login-box.active{
+         transition: all 300ms ease-in-out;
+         transform: translate(-50%,-50%)scale(1);
+         display: block;
+      }
+      
+      .login-box {
+         display: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    z-index: 2;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(24, 20, 20, 0.987);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+  }
+  
+  .login-box form .a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box .a:hover {
+    background: #03f40f;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f40f,
+                0 0 25px #03f40f,
+                0 0 50px #03f40f,
+                0 0 100px #03f40f;
+  }
+  
+  .login-box .a span {
+    position: absolute;
+    display: block;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+  
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box .a span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03f40f);
+    animation: btn-anim1 2s linear infinite;
+  }
+  
+  @media (max-width: 641px) {
+           .login-box {
+              margin-top: 20em;
+                  max-width: 300px;
+           }
+  
+              
+        }
+  </style>
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header fixed-top">
+
+   <div class="container">
+
+      <div class="row align-items-center justify-content-between">
+
+         <a href="#home" class="logo"><span>Spartan</span>Athletix</a>
+
+         <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#Program">Programs</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#Transformation">Transformation</a>
+<!--             <a href="#blogs">Blogs</a>
+ -->         </nav>
+
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+      </div>
+
+   </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="container">
+
+      <div class="row align-items-center min-vh-100">
+
+         <div class="col-md-6">
+            <img src="images/home-img.png" class="w-100" alt="">
+         </div>
+
+         <div class="col-md-6 text-center text-md-left">
+            <span>GET FIT WITH<strong> DEBO </strong></span>
+            <h3>Fight For Your Dreams</h3>
+            <a href="#about" class="link-btn">get started</a>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="container">
+
+      <div class="row align-items-center flex-wrap-reverse">
+
+         <div class="col-md-6">
+            <span>About me</span>
+            
+            <p>My name is <strong>Debi Engida</strong>, I am an Internationaly Certified Personal Trainer: (INTERNATIONAL SPORT SCIENCE ASSOCIATION,Phoenix AZ).
+               I am also Certified by CrossFit with spot the flow and Programming Cources. With my Experties, I have helped so many people Loss Weight, Gain muscle, Body Recomp and Build their Body-Physique.
+               I will deffinetly help you reach your Goals!</p>
+            <div class="certificates">
+               <img src="images/Certif.PNG" alt="">
+               <img src="images/certif2.PNG" alt="">
+               <img src="images/certif3.jpg" alt="">
+            </div>
+         </div>
+
+         <div class="col-md-6">
+            <img src="images/about-img.png" class="w-100" alt="">
+         </div>   
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- counter section starts  -->
+
+<section class="counter">
+
+   <div class="container box-container">
+
+      <div class="box">
+         <h3>10+</h3>
+         <p>online Program</p>
+      </div>
+
+      <div class="box">
+         <h3>3K+</h3>
+         <p>Instagram</p>
+      </div>
+
+     
+
+      <div class="box">
+         <h3>50+</h3>
+         <p>satiesfied clients</p>
+      </div>
+
+
+      <div class="box">
+         <h3>10.2K+</h3>
+         <p>TikTok</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- counter section ends -->
+
+<!-- Program section starts  -->
+
+<section class="Program" id="Program">
+
+   <div class="heading">
+      <span>Programs</span>
+      <h3>latest Programs</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="workoutplan">
+         <div class="paragraph">
+        <h1> PERSONALIZED WORKOUT PLAN - UPDATED MONTHLY</h1>
+       <h3>  These are all MY OWN workout programs that I swear by. The last thing I will EVER give you is a generic cookie cutter workout routine.
+
+I offer everything from 3 day splits to 5 and 6 day splits (Push pull leg, or standard bro splits) so whatever your preference is, we can make it work.
+
+Your plan is updated monthly, ensuring you have a long enough time to progress, get stronger and then we switch it up again!</h3>
+</div> 
+<div class="desimg">
+</div>     
+</div>
+
+     
+<!-- </div> 
+<div class="desimg">
+   <img src="images/workP.png" alt="">
+</div>     
+</div>  -->   
+<!-- 
+   
+      <div class="box">
+         <div class="image">
+            <img src="images/img-4.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> mon - sat </span>
+               <span> <i class="fas fa-clock"></i> 1 hours </span>
+            </div>
+            <h3>weight lifting and diet planing classes</h3>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-5.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> mon - sat </span>
+               <span> <i class="fas fa-clock"></i> 1 hours </span>
+            </div>
+            <h3>weight lifting and diet planing classes</h3>
+            <a href="#" class="link-btn">read more</a>
+         </div>
+      </div> -->
+
+    
+
+   </div>
+   <br><br><br>
+   <div class="box-container container">
+
+      <div class="workoutplan mektefiya">
+         <img src="images/mektefiya.png" alt="">
+         <div class="paragraph">
+        <h1> PERSONALIZED MEAL PLAN - UPDATED MONTHLY</h1>
+       <h3>  Your custom meal plan will be DELICIOUS and EASY to ensure ongoing results.
+
+         I will give you 7 days of variety within the plan so you can change it up everyday or just choose one day to follow. Email me to adjust meals and add specific ones in or substitute any meals out.
+         
+         Choose your dietary preferences, dislikes and allergies before we even start.</h3>
+</div> 
+     
+</div>
+
+</section>
+
+<!-- Program section ends -->
+
+<!-- pricint section starts  -->
+
+<section class="pricing" id="pricing">
+
+   <div class="heading">
+      <span>Program pricing</span>
+      <h3>Choose Your preference</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <h3>Personalized Workout Plan</h3>
+         <div class="price"><span>birr</span>10K<span>/3m</span></div>
+         <a href="tel:+2519 2375 9007" class="link-btn">choose the plan</a>
+         <div class="list">
+            <p> <i class="fas fa-check"></i> Personal Trainer </p>
+            <p> <i class="fas fa-check"></i> BodyBuilding </p>
+            <p> <i class="fas fa-check"></i> Crossfit </p>
+            <p> <i class="fas fa-check"></i> Weight Loss </p>
+            <p> <i class="fas fa-box"></i> 3/6/12 Month Service </p>
+            <p> <i class="fas fa-times"></i> Personalized Meal Plan </p>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>Premium Package</h3>
+         <div class="price"><span>birr</span>20K<span>/3m</span></div>
+         <a href="tel:+2519 2375 9007" class="link-btn">choose the plan</a>
+         <div class="list">
+            <p> <i class="fas fa-check"></i> Personal Trainer </p>
+            <p> <i class="fas fa-check"></i> Personalized Workout Plan </p>
+            <p> <i class="fas fa-check"></i> Personalized Meal Plan </p>
+            <p> <i class="fas fa-box"></i> 3/6/12 Month Service </p>
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <h3>Personalized Meal Plan</h3>
+         <div class="price"><span>birr</span>10K<span>/3m</span></div>
+         <a href="tel:+2519 2375 9007" class="link-btn">choose the plan</a>
+         <div class="list">
+            <p> <i class="fas fa-check"></i> Personal Trainer </p>
+            <p> <i class="fas fa-check"></i> BodyBuilding </p>
+            <p> <i class="fas fa-check"></i> Crossfit </p>
+            <p> <i class="fas fa-check"></i> Weight Loss </p>
+            <p> <i class="fas fa-box"></i> 3/6/12 Month Service </p>
+            <p> <i class="fas fa-times"></i> Personalized Workout Plan </p>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- pricint section ends -->
+
+<!-- join us section starts  -->
+
+<section class="join">
+
+   <div class="container">
+
+      <div class="row align-items-center">
+         <div class="col-md-7">
+            <img src="images/join-us-image.png" class="w-100" alt="">
+         </div>
+         <div class="col-md-5 text-center text-md-left">
+            <span>join us now</span>
+            <h3>join us & get upto 50% off</h3>
+            <p>We are excited to offer a special discount exclusively for our first-time sign up users. As a thank you for choosing our services, we are giving you a discount on your first purchase. Take advantage of this offer and enjoy our quality products and services at a discounted price. Don't miss out on this opportunity to save money while experiencing the best of what we have to offer. Sign up now and claim your discount today!</p>
+            <button class="link-btn" onclick="togglePopup()">join now</button>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- join us section ends -->
+
+<!-- Transformation section starts  -->
+
+<section class="Transformation" id="Transformation">
+
+   <div class="heading">
+      <span>Transformation</span>
+      <h3>see how clients are Transformed</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-4.jpg" alt="">
+         </div>
+         
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-5.jpg" alt="">
+         </div>
+       
+      </div>
+      <div class="box">
+         <div class="image">
+            <img src="images/img-6.jpg" alt="">
+         </div>
+         
+      </div>
+
+   </div>
+
+</section>
+
+
+<div class="login-box" id="popup-1">
+ 
+   <form action="backbone.php" method="post">
+     <div class="user-box">
+       <input type="text" name="name" required="">
+       <label>Name</label>
+     </div>
+     <div class="user-box">
+       <input type="number" name="age" required="">
+       <label>Age</label>
+     </div>
+     <div class="user-box">
+       <input type="number" name="height" required="">
+       <label>Height <sub>cm</sub></label>
+     </div>
+     <div class="user-box">
+       <input type="number" name="Weight" required="">
+       <label>Weight <sub>kg</sub></label>
+     </div>
+     <div class="user-box">
+       <input type="text" name="goal" required="">
+       <label>Goal</label>
+     </div>
+     <div class="user-box">
+       <input type="text" name="medical_issues" required="">
+       <label>Medical Issues</label>
+     </div>
+     <div class="user-box">
+       <input type="text" name="pain" required="" list="Injuties">
+       <datalist id="Injuties">
+           <option value="Knee Injury"></option>
+           <option value="Shoulder Pain"></option>
+           <option value="Back Pain"></option>
+           <option value="Hypertension"></option>
+           <option value="Diabetic"></option>
+       </datalist>
+       <label>Any Pain or Injury on the Joint</label>
+     </div><center>
+     
+       <input class="a" type="submit" value="SEND">
+        <span></span>
+     </center>
+   </form>
+ </div>
+
+
+<!-- Transformation section ends -->
+
+<!-- blogs section starts  -->
+<!-- 
+<section class="blogs" id="blogs">
+
+   <div class="heading">
+      <span>our blogs</span>
+      <h3>our daily posts</h3>
+   </div>
+
+   <div class="box-container container">
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-1.jpg" alt="">
+         </div>
+         <div class="content">
+            <a href="#" class="link">Make yourself stronger than your excuses.</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+               <span> <i class="fas fa-user"></i> by admin </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-2.jpg" alt="">
+         </div>
+         <div class="content">
+            <a href="#" class="link">Make yourself stronger than your excuses.</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+               <span> <i class="fas fa-user"></i> by admin </span>
+            </div>
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/img-3.jpg" alt="">
+         </div>
+         <div class="content">
+            <a href="#" class="link">Make yourself stronger than your excuses.</a>
+            <div class="icons">
+               <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+               <span> <i class="fas fa-user"></i> by admin </span>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+</section> -->
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container container">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="#home"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="#about"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="#Program"> <i class="fas fa-angle-right"></i> Program</a>
+         <a href="#pricing"> <i class="fas fa-angle-right"></i> Pricing</a>
+         <a href="#Transformation"> <i class="fas fa-angle-right"></i> Transformation</a>
+<!--          <a href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+ -->      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="tel:+2519 2375 9007 "> <i class="fas fa-phone"></i> +251 923 759 007 </a>
+<!--          <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+ -->         <a href="mailto:debiengida@gmail.com"> <i class="fas fa-envelope"></i> debiengida@gmail.com </a>
+         <a href="https://goo.gl/maps/2WbQA5KWBE1eEP2Q7"> <i class="fas fa-map"></i> HARROS FITNESS AND WELLNESS CENTER </a>
+         <a href="https://goo.gl/maps/uK6VHGNaavdSMwQz6"> <i class="fas fa-map"></i>ADDIS ALEM LUXURY APARTMENT </a>
+
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+<!--          <a href="#"> <i class="fab fa-twitter"></i> twitter </a> -->         
+         <a href="https://www.instagram.com/debiengida/"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="https://www.facebook.com/debiengida/"> <i class="fab fa-facebook-f"></i> facebook </a>
+
+<!--          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a> -->      </div>
+
+    <!--   <div class="box">
+         <h3>newsletter</h3>
+         <p>subscribe for latest updates</p>
+         <form action="">
+            <input type="email" name="" placeholder="enter your email" id="" class="email">
+            <input type="submit" value="subscribe" class="link-btn">
+         </form>
+      </div> -->
+
+   </div>
+
+   <p class="credit"> created by <a href="https://www.instagram.com/joelalex1316/"><span>Eyouel</span> </a>| all rights reserved! </p>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+<!-- custom js file link     -->
+<script src="js/script.js"></script>
+   <script>
+      function togglePopup(){
+         document.getElementById("popup-1")
+         .classList.toggle("active")
+      }
+   </script>
+</body>
+</html>
